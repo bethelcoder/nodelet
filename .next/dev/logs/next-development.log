@@ -1,0 +1,189 @@
+[00:00:02.306] Server  LOG      ✓ Ready in 1743ms
+[00:00:05.414] Server  LOG      ○ Compiling / ...
+[00:00:07.522] Server  ERROR   C:\Users\nduvh\OneDrive\Desktop\nodelet\.next\dev\server\chunks\ssr\11b8b_fb4a66ba._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:07.526] Server  ERROR   TRPCError: No procedure found on path "getUsers,toJSON"
+[00:00:07.529] Server  ERROR   C:\Users\nduvh\OneDrive\Desktop\nodelet\.next\dev\server\chunks\ssr\11b8b_fb4a66ba._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:07.529] Server  ERROR    ⨯ "unhandledRejection:" TRPCError: No procedure found on path "getUsers,toJSON"
+[00:00:07.531] Server  ERROR   C:\Users\nduvh\OneDrive\Desktop\nodelet\.next\dev\server\chunks\ssr\11b8b_fb4a66ba._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:07.532] Server  ERROR    ⨯ "unhandledRejection: " TRPCError: No procedure found on path "getUsers,toJSON"
+[00:00:08.885] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:26.923] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:47.440] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:37.304] Server  LOG      ✓ Compiled in 109ms
+[00:10:45.819] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:20.850] Server  LOG      ✓ Compiled in 66ms
+[00:14:22.847] Server  LOG      ✓ Compiled in 138ms
+[00:17:10.207] Server  LOG      ✓ Compiled in 298ms
+[00:17:11.360] Browser ERROR   ./OneDrive/Desktop/nodelet/trpc/server.tsx:1:1
+Ecmascript file had an error
+> 1 | import 'server-only'; // <-- ensure this file cannot be imported from the client
+    | ^^^^^^^^^^^^^^^^^^^^^
+  2 | import { createTRPCOptionsProxy } from '@trpc/tanstack-react-query';
+  3 | import { cache } from 'react';
+  4 | import { createTRPCContext } from './init';
+
+You're importing a component that needs "server-only". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Server Component:
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx
+    ./OneDrive/Desktop/nodelet/app/page.tsx
+
+  Client Component Browser:
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Server Component]
+    ./OneDrive/Desktop/nodelet/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx [Client Component SSR]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Client Component SSR]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Server Component]
+    ./OneDrive/Desktop/nodelet/app/page.tsx [Server Component]
+[00:17:11.360] Browser ERROR   ./OneDrive/Desktop/nodelet/trpc
+Invalid import
+'server-only' cannot be imported from a Client Component module. It should only be used from a Server Component.
+The error was caused by importing 'OneDrive/Desktop/nodelet/trpc'
+[00:17:11.360] Browser ERROR   ./OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:module)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:module)
+
+Import trace:
+  Client Component Browser:
+    ./OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/lib/generated/prisma/internal/prismaNamespace.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/lib/generated/prisma/client.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/lib/db.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/trpc/routers/_app.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Server Component]
+    ./OneDrive/Desktop/nodelet/app/page.tsx [Server Component]
+[00:17:17.379] Browser ERROR   ./OneDrive/Desktop/nodelet/trpc/server.tsx:1:1
+Ecmascript file had an error
+> 1 | import 'server-only'; // <-- ensure this file cannot be imported from the client
+    | ^^^^^^^^^^^^^^^^^^^^^
+  2 | import { createTRPCOptionsProxy } from '@trpc/tanstack-react-query';
+  3 | import { cache } from 'react';
+  4 | import { createTRPCContext } from './init';
+
+You're importing a component that needs "server-only". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Server Component:
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx
+    ./OneDrive/Desktop/nodelet/app/page.tsx
+
+  Client Component Browser:
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Server Component]
+    ./OneDrive/Desktop/nodelet/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx [Client Component SSR]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Client Component SSR]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Server Component]
+    ./OneDrive/Desktop/nodelet/app/page.tsx [Server Component]
+[00:17:17.379] Browser ERROR   ./OneDrive/Desktop/nodelet/trpc
+Invalid import
+'server-only' cannot be imported from a Client Component module. It should only be used from a Server Component.
+The error was caused by importing 'OneDrive/Desktop/nodelet/trpc'
+[00:17:17.379] Browser ERROR   ./OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:module)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:module)
+
+Import trace:
+  Client Component Browser:
+    ./OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/lib/generated/prisma/internal/prismaNamespace.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/lib/generated/prisma/client.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/lib/db.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/trpc/routers/_app.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Server Component]
+    ./OneDrive/Desktop/nodelet/app/page.tsx [Server Component]
+[00:18:07.362] Browser ERROR   ./OneDrive/Desktop/nodelet/trpc/server.tsx:1:1
+Ecmascript file had an error
+> 1 | import 'server-only'; // <-- ensure this file cannot be imported from the client
+    | ^^^^^^^^^^^^^^^^^^^^^
+  2 | import { createTRPCOptionsProxy } from '@trpc/tanstack-react-query';
+  3 | import { cache } from 'react';
+  4 | import { createTRPCContext } from './init';
+
+You're importing a component that needs "server-only". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+Import traces:
+  Server Component:
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx
+    ./OneDrive/Desktop/nodelet/app/page.tsx
+
+  Client Component Browser:
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Server Component]
+    ./OneDrive/Desktop/nodelet/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx [Client Component SSR]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Client Component SSR]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Server Component]
+    ./OneDrive/Desktop/nodelet/app/page.tsx [Server Component]
+[00:18:07.362] Browser ERROR   ./OneDrive/Desktop/nodelet/trpc
+Invalid import
+'server-only' cannot be imported from a Client Component module. It should only be used from a Server Component.
+The error was caused by importing 'OneDrive/Desktop/nodelet/trpc'
+[00:18:07.362] Browser ERROR   ./OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:module)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:module)
+
+Import trace:
+  Client Component Browser:
+    ./OneDrive/Desktop/nodelet/node_modules/@prisma/client/runtime/library.mjs [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/lib/generated/prisma/internal/prismaNamespace.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/lib/generated/prisma/client.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/lib/db.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/trpc/routers/_app.ts [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/trpc/server.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Client Component Browser]
+    ./OneDrive/Desktop/nodelet/app/client.tsx [Server Component]
+    ./OneDrive/Desktop/nodelet/app/page.tsx [Server Component]
+[00:24:41.456] Server  LOG      ✓ Compiled in 73ms
+[00:24:49.328] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:51.198] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:56.280] Server  LOG      ✓ Compiled in 107ms
+[00:27:55.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:58.207] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:00.057] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:05.909] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

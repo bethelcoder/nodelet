@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/nduvh/OneDrive/Desktop/nodelet/app/client.tsx"],"sourcesContent":["\"use client\";\r\n\r\nexport const Client = () => {\r\n    return (\r\n        <div>\r\n            Client Component: \r\n        </div>\r\n    )\r\n}"],"names":[],"mappings":";;;;;AAAA;;AAEO,MAAM,SAAS;IAClB,qBACI,gRAAC;kBAAI;;;;;;AAIb"}}]
+}
